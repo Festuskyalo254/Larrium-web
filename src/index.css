@@ -1,0 +1,89 @@
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/jetbrains-mono/500.css';
+@import '@fontsource/jetbrains-mono/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  background-color: #0b0e14;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, rgba(0, 212, 255, 0.12), transparent 22%),
+    radial-gradient(circle at 80% 10%, rgba(0, 255, 65, 0.08), transparent 16%),
+    linear-gradient(180deg, #0b0e14 0%, #05070e 100%);
+  color: #e2e8f0;
+}
+
+body::selection {
+  background: rgba(0, 212, 255, 0.24);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.55);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 212, 255, 0.42);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 212, 255, 0.62);
+}
+
+.section-glass {
+  background: rgba(15, 23, 42, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+}
+
+.btn-tech {
+  @apply inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-slate-950 transition duration-300 ease-out shadow-glow;
+}
+
+.btn-tech:hover {
+  transform: translateY(-1px);
+}
+
+.heading-mono {
+  letter-spacing: 0.04em;
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+.mesh-bg {
+  background-image: radial-gradient(circle at 20% 20%, rgba(0, 212, 255, 0.12), transparent 16%),
+    radial-gradient(circle at 80% 16%, rgba(0, 255, 65, 0.08), transparent 14%),
+    linear-gradient(135deg, rgba(10, 18, 40, 0.95), transparent 80%),
+    repeating-linear-gradient(45deg, transparent, transparent 24px, rgba(255,255,255,0.03) 25px, rgba(255,255,255,0.03) 26px);
+}
+
+@keyframes pulse-weak {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+.pulse-soft {
+  animation: pulse-weak 4s ease-in-out infinite;
+}
+
+.card-border {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
