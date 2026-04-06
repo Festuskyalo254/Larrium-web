@@ -1,5 +1,5 @@
 {
-  "name": "larrium-backend",
+  "name": "larrium-office-solutions-backend",
   "version": "1.0.0",
   "description": "Backend for Larrium Tech mailing service",
   "main": "index.js",

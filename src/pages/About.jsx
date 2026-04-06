@@ -14,7 +14,7 @@ function About() {
           
           <div className="space-y-6 text-base leading-8 text-slate-300">
             <p>
-              Founded on the principles of technical excellence and transparent service, Larrium Tech has evolved from a specialized repair lab into a comprehensive technology partner for businesses and individuals in Nairobi.
+              Founded on the principles of technical excellence and transparent service, Larrium Office Solutions has evolved from a specialized repair lab into a comprehensive technology partner for businesses and individuals in Nairobi.
             </p>
             <p>
               We understand that in today's digital age, your devices and security systems are critical to your success. That's why we've built a workflow focused on speed without compromising on the meticulous detail required for component-level repairs and professional-grade installations.

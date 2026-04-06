@@ -148,7 +148,7 @@ function Contact() {
           </div>
           <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-slate-950/90">
             <iframe
-              title="Larrium Tech location map"
+              title="Larrium Office Solutions location map"
               className="h-80 w-full border-0"
               src="https://maps.google.com/maps?q=Buruburu%20Jimlizer%20building%20ground%20floor&t=&z=16&ie=UTF8&iwloc=&output=embed"
               loading="lazy"
