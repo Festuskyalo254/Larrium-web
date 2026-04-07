@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, ExternalLink } from 'lucide-react';
 
 const footerLinks = [
@@ -44,12 +45,12 @@ function Footer() {
               <ul className="space-y-4">
                 {footerLinks.map((link) => (
                   <li key={link.label}>
-                    <a
-                      href={link.href}
+                    <Link
+                      to={link.href}
                       className="text-sm transition hover:text-primary hover:translate-x-1 inline-block"
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
